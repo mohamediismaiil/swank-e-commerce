@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+*{
+  font-family: 'Open Sans' , sans-serif;
+}
+
+
+.border{
+  border:3px solid blue 
+}
+
+.swiper-pagination-bullet {
+    background: rgb(121, 121, 139);
+    width: 15px;
+    height: 15px;
+}
+.imageSlider:active{
+  cursor: grabbing;
+}
+
+.imageSlider {
+  cursor: grab;
+}
+
+.shopNow{
+    background-color: #272525;
+    padding: 10px 40px;
+        font-size: 15px;
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+        border:none
+}
+
+.shopNow:hover {
+  background-color: #6482AD;
+  color: black;
+  transition: .8s;
+}
+.color{
+  color: #c4c4c4;
+}
+
+
+ .fall-in {
+   
+   
+  
+  opacity: 0;
+    /* بداية العنصر بشفافية 0 */
+    transform: translateY(100%);
+    /* العنصر يبدأ من أسفل الصفحة */
+    animation: fall 1s forwards;
+ }
+
+ /* تعريف الأنيميشن للسقوط */
+ @keyframes fall {
+  0% {
+      transform: translateY(100%);
+      /* العنصر يبدأ من أسفل */
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      /* العنصر يرتفع ليظهر في مكانه الطبيعي */
+      opacity: 1;
+      /* العنصر يصبح مرئيًا */
+    }
+ }
